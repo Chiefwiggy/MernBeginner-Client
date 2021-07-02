@@ -10,11 +10,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-app.use(express.static(__dirname)); //here is important thing - no static directory, because all static :)
 
-app.get("/*", function(req, res) {
-  res.sendFile(path.join(__dirname, "index.html"));
-});
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
